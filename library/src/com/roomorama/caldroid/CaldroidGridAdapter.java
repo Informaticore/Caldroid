@@ -268,9 +268,9 @@ public class CaldroidGridAdapter extends BaseAdapter {
 		if (shouldResetDiabledView && shouldResetSelectedView) {
 			// Customize for today
 //			if (dateTime.equals(getToday())) {
-				cellView.setBackgroundResource(R.drawable.red_border);
+//				cellView.setBackgroundResource(R.drawable.red_border);
 //			} else {
-//				cellView.setBackgroundResource(R.drawable.cell_bg);
+				cellView.setBackgroundResource(R.drawable.cell_bg);
 //			}
 		}
 
