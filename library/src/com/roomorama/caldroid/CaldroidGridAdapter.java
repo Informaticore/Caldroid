@@ -244,9 +244,9 @@ public class CaldroidGridAdapter extends BaseAdapter {
 				cellView.setBackgroundResource(CaldroidFragment.disabledBackgroundDrawable);
 			}
 
-//			if (dateTime.equals(getToday())) {
-//				cellView.setBackgroundResource(R.drawable.red_border_gray_bg);
-//			}
+			if (dateTime.equals(getToday())) {
+				cellView.setBackgroundResource(R.drawable.red_border_gray_bg);
+			}
 		} else {
 			shouldResetDiabledView = true;
 		}
@@ -267,11 +267,11 @@ public class CaldroidGridAdapter extends BaseAdapter {
 
 		if (shouldResetDiabledView && shouldResetSelectedView) {
 			// Customize for today
-//			if (dateTime.equals(getToday())) {
-//				cellView.setBackgroundResource(R.drawable.red_border);
-//			} else {
+			if (dateTime.equals(getToday())) {
+				cellView.setBackgroundResource(R.drawable.red_border);
+			} else {
 				cellView.setBackgroundResource(R.drawable.cell_bg);
-//			}
+			}
 		}
 
 		cellView.setText("" + dateTime.getDay());
